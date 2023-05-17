@@ -1,0 +1,120 @@
+/* add border box sizing to the page right from the start */
+:root {
+    --lime: #a4ffa2;
+    --magenta: #f47dda;
+    --magenta50: #f47dda80;
+    --white: #ffffff;
+    --tan: #cec5b4;
+    --teal: #2e6d81;
+    --cyan: #7de6f4;
+    --black: #050d14;
+    --base-size: 1rem;
+    --scale: 1.25;
+    --h5: calc(var(--base-size) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+    --sans-serif: "Poppins", sans-serif;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    /* > is a direrct decendents  */
+  }
+  
+  .colors > * {
+    width: 3rem;
+    height: 3rem;
+  }
+  .colors {
+    display: flex;
+    gap: 1rem;
+  }
+  .lime {
+    background-color: var(--lime);
+  }
+  .magenta {
+    background-color: var(--magenta);
+  }
+  .magenta50 {
+    background-color: var(--magenta50);
+  }
+  .white {
+    background-color: var(--white);
+  }
+  .tan {
+    background-color: var(--tan);
+  }
+  .teal {
+    background-color: var(--teal);
+  }
+  .cyan {
+    background-color: var(--cyan);
+  }
+  .black {
+    background-color: var(--black);
+  }
+  body {
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: var(--base-size);
+    background-color: var(--teal);
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    color: var(--lime);
+  }
+  a:hover {
+    color: var(--cyan);
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 3rem 0 1.38rem;
+   font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: var(--h1);
+  }
+  
+  h2 {
+    font-size: var(--h2);
+  }
+  
+  h3 {
+    font-size: var(--h3);
+  }
+  
+  h4 {
+    font-size: var(--h4);
+  }
+  
+  h5 {
+    font-size: var(--h5);
+  }
+  
+  small,
+  .text_small {
+    font-size: calc(var(--base-size) / var(--scale));
+  }
+  .club {
+    font-size: var(--h5);
+  }
